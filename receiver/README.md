@@ -2,9 +2,31 @@ stm32F
 103C8T6
 9910X RR93
 
+# STM32F103C8T6 Pinout
 
-ruedi@ruedi-ThinkPad-T450:~/.platformio/packages/tool-openocd$ bin/openocd -c "set CPUTAPID 0x2ba01477" -f scripts/interface/stlink.cfg -f scripts/board/stm32f103c8_blue_pill.cfg -c "program /home/ruedi/git/stm32test/.pio/build/stm32F103C8/firmware.elf exit"
+![Blue Pill Pinout](doc/stm32f103c8t6_pinout_voltage01.png)
 
-https://github.com/rogerclarkmelbourne/STM32duino-bootloader/blob/master/binaries/generic_boot20_pc13.bin
+# NRF24 Pinout:
 
-ruedi@ruedi-ThinkPad-T450:~/.platformio/packages/tool-openocd$ bin/openocd -c "set CPUTAPID 0x2ba01477" -f scripts/interface/stlink.cfg -f scripts/board/stm32f103c8_blue_pill.cfg -c "program /home/ruedi/Downloads/generic_boot20_pc13.bin 0x08000000 verify exit"
+![NRF 24](doc/nrf24pinout.jpg)
+
+Arduino Pins:
+
+- PA4: CS
+- PA5: SCK
+- PA6: MISO
+- PA7: MOSI
+- PB0: CE
+- 3.3V: VCC
+
+# LM293D Pinout
+
+![LM293D](doc/lm293d.png)
+Arduino Pins
+
+- pinD1A = PB4;
+- pinD1B = PB5;
+- pinD2A = PB6;
+- pinD2B = PB7;
+- pinEN1 = PB3;
+- pinEN2 = PB9;
